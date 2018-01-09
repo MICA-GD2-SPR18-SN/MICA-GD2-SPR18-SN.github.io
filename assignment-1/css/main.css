@@ -131,11 +131,12 @@ textarea {
  body {
    padding:6vw;
    font-family: monospace;
-   color:#2d262d;
-   background:#a2f1c1;
+   color:#545454;
+   background:#f6f6f6;
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 18px;
    line-height: 1.5;
+   border-top:4px solid #a2f1c1;
 
  }
 
@@ -257,7 +258,7 @@ ol li {
 
 
 ol li:before {
-    content:"wk. " counter(step-counter);
+    content:counter(step-counter)"." ;
     margin-right: 5px;
     font-size: 60%;
     position:absolute;
@@ -265,8 +266,6 @@ ol li:before {
     width:3em;
     margin-left: -5em;
     margin-top: 0;
-    color:#434343;
-    background:#a2f1c1;
     padding:.6em 0
 }
 
