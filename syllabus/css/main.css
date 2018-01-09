@@ -308,6 +308,8 @@ ol li:before {
 .aside-left {
   position:fixed;
   font-size: 70%;
+  top:50vh;
+  transform: translateY(-50%);
   left:0;
   padding:1em 2em;
   width:10%;
