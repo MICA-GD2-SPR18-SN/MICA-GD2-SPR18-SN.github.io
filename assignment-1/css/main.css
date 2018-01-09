@@ -132,11 +132,12 @@ textarea {
    padding:6vw;
    font-family: monospace;
    color:#545454;
-   background:#f6f6f6;
+   background-color:#f6f6f6;
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 18px;
    line-height: 1.5;
-   border-top:4px solid #a2f1c1;
+
+
 
  }
 
@@ -145,7 +146,6 @@ textarea {
 h1 {
 font-family: 'Playfair Display', serif;
 font-weight: 900;
-font-style: italic;
 font-size: 55px;
 line-height: 1.2;
 
@@ -285,6 +285,13 @@ ol li:before {
 }
 
 @media (min-width: 800px) {
+
+  body {
+    background-image:url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 40%;
+  }
 
   .animation {
      font-size: 100px;
