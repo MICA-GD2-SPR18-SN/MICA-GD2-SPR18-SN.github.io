@@ -98,7 +98,13 @@ textarea {
 
 
 
+ .testing {
+   display: grid;
+ }
 
+ .testing img{
+   width:100px;
+ }
 
 
 
