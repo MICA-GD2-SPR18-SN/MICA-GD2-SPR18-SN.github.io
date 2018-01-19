@@ -1,3 +1,4 @@
+$(document).ready(function(){
 var folder = "img/";
 
 $.ajax({
@@ -9,4 +10,5 @@ $.ajax({
             }
         });
     }
+});
 });
