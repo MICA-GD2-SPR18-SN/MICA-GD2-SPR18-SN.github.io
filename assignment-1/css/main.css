@@ -97,9 +97,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   @keyframes spin {
-       from {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg)}
-       to {transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg)}
+   @keyframes risein {
+       from {transform:translateY(100%);}
+       to {transform:translateY(0%);}
    }
 
  .animation .g,  .animation .d,  .animation .two {
@@ -282,6 +282,46 @@ ol li:before {
   margin-left:.6em;
   text-transform: uppercase;
   border-radius: 100px;
+}
+
+.call-to-action {
+  background:#545454;
+  color: #f6f6f6;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  padding:1em .6em;
+  transition: 300ms;
+  font-size: 80%;
+  animation:risein 1s ease 300ms both;
+}
+
+.call-to-action:hover {
+  padding:1.6em .6em;
+}
+
+a.button {
+  border:1px solid;
+  border-radius: 100px;
+  padding:.3em .6em;
+  transition: 300ms;
+}
+
+a.button.inactive {
+  opacity:.4;
+}
+
+
+a.button.active:hover {
+  border:1px solid;
+  border-radius: 100px;
+  padding:.3em .6em;
+  background:#f6f6f6;
+  color: #545454;
+  transition: 100ms;
 }
 
 @media (min-width: 800px) {
