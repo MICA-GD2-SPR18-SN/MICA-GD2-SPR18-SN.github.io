@@ -251,7 +251,8 @@ ol li {
 }
 
 .inactive {
-  text-decoration: strikethrough;
+  text-decoration: line-through;
+  opacity:.7
 }
 
 
@@ -328,16 +329,18 @@ a.button.active:hover {
 
   body {
     background-repeat: no-repeat;
+  }
+
+  body.assignment-1 {
+    background-image:url("../img/bg-a1.png");
     background-position: top right;
     background-size: 40%;
   }
 
-  body.assignment-1 {
-    background-image:url("../assignment-1/img/bg.png");
-  }
-
    body.assignment-2 {
-    background-image:url("../assignment-2/img/bg.png");
+    background-image:url("../img/a2/bg.png");
+    background-size: 240px;
+    background-position: 80% 20px;
   }
 
   .animation {
@@ -420,13 +423,7 @@ a.button.active:hover {
           transform:rotateX(-90deg) rotateY(360deg);
         }
       }
-
-      body {
-        background-image: url(img/bg.png);
-        background-size: 240px;
-        background-position: 80% 20px;
-      }
-        .a2-image-illustration {
+      .a2-image-illustration {
           transform-style: preserve-3d;
           position: absolute;
           width:400px;
