@@ -327,10 +327,17 @@ a.button.active:hover {
 @media (min-width: 800px) {
 
   body {
-    background-image:url("../img/bg.png");
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 40%;
+  }
+
+  body.assignment-1 {
+    background-image:url("../assignment-1/img/bg.png");
+  }
+
+   body.assignment-2 {
+    background-image:url("../assignment-2/img/bg.png");
   }
 
   .animation {
