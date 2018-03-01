@@ -325,57 +325,6 @@ a.button.active:hover {
   transition: 100ms;
 }
 
-@media (min-width: 800px) {
-
-  body {
-    background-repeat: no-repeat;
-  }
-
-  body.assignment-1 {
-    background-image:url("../img/bg-a1.png");
-    background-position: top right;
-    background-size: 40%;
-  }
-
-   body.assignment-2 {
-    background-image:url("../img/a2/bg.png");
-    background-size: 240px;
-    background-position: 80% 20px;
-  }
-
-  .animation {
-     font-size: 100px;
-  }
-
-  p.small {
-    columns: 2;
-    column-gap: 20px;
-  }
-
-.aside-right {
-  float:right;
-  font-size: 70%;
-  margin: 0 -20% 10% 10%;
-  padding:1em 2em;
-  width:40%;
-  border-left:1px solid rgba(0,0,0,.5);
-}
-
-.aside-left {
-  position:fixed;
-  font-size: 70%;
-  left:0;
-  padding:1em 2em;
-  width:10%;
-}
-
-.main-content-well {
-  margin-left:10%;
-}
-
-}
-
-
 /* assignment-2 styles */
 
 @keyframes spin {
@@ -426,6 +375,7 @@ a.button.active:hover {
       .a2-image-illustration {
           transform-style: preserve-3d;
           position: absolute;
+          display:none;
           width:400px;
           height:400px;
           animation: spin 30s infinite linear reverse;
@@ -525,6 +475,63 @@ a.button.active:hover {
           animation: spin-alt 30s infinite linear reverse;
           transform-origin: 36% 90%;
         }
+
+@media (min-width: 800px) {
+
+  body {
+    background-repeat: no-repeat;
+  }
+
+  body.assignment-1 {
+    background-image:url("../img/bg-a1.png");
+    background-position: top right;
+    background-size: 40%;
+  }
+
+   body.assignment-2 {
+    background-image:url("../img/a2/bg.png");
+    background-size: 240px;
+    background-position: 80% 20px;
+  }
+
+  .animation {
+     font-size: 100px;
+  }
+
+  p.small {
+    columns: 2;
+    column-gap: 20px;
+  }
+
+.aside-right {
+  float:right;
+  font-size: 70%;
+  margin: 0 -20% 10% 10%;
+  padding:1em 2em;
+  width:40%;
+  border-left:1px solid rgba(0,0,0,.5);
+}
+
+.aside-left {
+  position:fixed;
+  font-size: 70%;
+  left:0;
+  padding:1em 2em;
+  width:10%;
+}
+
+.main-content-well {
+  margin-left:10%;
+}
+
+.a2-image-illustration {
+  display:block;
+}
+
+}
+
+
+
 
 
 
