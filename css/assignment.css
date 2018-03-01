@@ -373,6 +373,163 @@ a.button.active:hover {
 }
 
 
+/* assignment-2 styles */
+
+@keyframes spin {
+        from {
+          transform:rotateX(60deg) rotateZ(0deg);
+        }
+
+        to {
+          transform:rotateX(60deg) rotateZ(360deg);
+        }
+      }
+
+      @keyframes fade-in {
+        0% {
+          transform:translateY(0px);
+          opacity:1;
+          animation-timing-function: ease-out;
+        }
+
+        10% {
+          transform:translateY(-30px);
+          opacity:1;
+          animation-timing-function: ease-in;
+        }
+
+        20% {
+          transform:translateY(0px);
+          opacity:1;
+          animation-timing-function: ease-out;
+        }
+
+        100% {
+          transform:translateY(0px);
+          opacity:1;
+          animation-timing-function: ease-out;
+        }
+      }
+
+      @keyframes spin-alt {
+        from {
+          transform:rotateX(-90deg) rotateY(0deg);
+        }
+
+        to {
+          transform:rotateX(-90deg) rotateY(360deg);
+        }
+      }
+
+      body {
+        background-image: url(img/bg.png);
+        background-size: 240px;
+        background-position: 80% 20px;
+      }
+        .a2-image-illustration {
+          transform-style: preserve-3d;
+          position: absolute;
+          width:400px;
+          height:400px;
+          animation: spin 30s infinite linear reverse;
+          left:60%;
+          top:130px;
+          transform-origin: 45% 45%;
+        }
+
+        .a2-image-illustration img {
+          width:auto;
+          height:100%;
+          animation-name: fade-in;
+          animation-duration:4000ms;
+          animation-fill-mode: both;
+
+          animation-iteration-count: infinite;
+        }
+
+        .a2-image-illustration .img-textbubble1 img {
+          animation-delay:300ms;
+        }
+
+        .a2-image-illustration .img-imgbubble1 img {
+          animation-delay:600ms;
+        }
+
+        .a2-image-illustration .img-textbubble2 img {
+          animation-delay:900ms;
+        }
+
+        .a2-image-illustration .img-imgbubble2 img {
+          animation-delay:1200ms;
+        }
+
+
+
+
+
+        .a2-image-illustration .img-line{
+          background-image: url("../img/a2/line.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          width:300px;
+          height:300px;
+          position: absolute;
+        }
+
+        .a2-image-illustration .img-shadow{
+          background-image: url("../img/a2/shadow.png");
+          transform:translateZ(-40px);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width:300px;
+          height:300px;
+          position: absolute;
+        }
+
+        .a2-image-illustration .img-textbubble1{
+          transform:rotateX(-90deg);
+          width:200px;
+          height:200px;
+          top: -120px;
+          left: 200px;
+          position: absolute;
+          animation: spin-alt 30s infinite linear reverse;
+          transform-origin: 35% 90%;
+        }
+
+        .a2-image-illustration .img-textbubble2{
+          transform:rotateX(-90deg);
+          width:200px;
+          height:200px;
+          top: 0px;
+          left: 55px;
+          position: absolute;
+          animation: spin-alt 30s infinite linear reverse;
+          transform-origin: 34% 90%;
+        }
+
+        .a2-image-illustration .img-imgbubble1{
+          transform:rotateX(-90deg);
+          width:200px;
+          height:200px;
+          top: -40px;
+          left: 153px;
+          position: absolute;
+          animation: spin-alt 30s infinite linear reverse;
+          transform-origin: 28% 90%;
+        }
+        .a2-image-illustration .img-imgbubble2{
+          transform:rotateX(-90deg);
+          top: 60px;
+          left: -44px;
+          width:200px;
+          height:200px;
+          position: absolute;
+          animation: spin-alt 30s infinite linear reverse;
+          transform-origin: 36% 90%;
+        }
+
+
 
 
 /* ==========================================================================
