@@ -431,7 +431,8 @@ th {
 .main-nav .openlink{
   position:fixed;
   top:3em;
-  right:1em;
+  padding:1em;
+  right:.6em;
   width:2em;
   height:2em;
   cursor: pointer;
@@ -439,7 +440,7 @@ th {
 
 .main-nav .navitems{
   position:fixed;
-  transform: scale(.8) translateZ(1000px);
+  transform: scale(.95) translateZ(1000px);
   transition: 300ms;
   background: #2d262d;
   top:-18px;
