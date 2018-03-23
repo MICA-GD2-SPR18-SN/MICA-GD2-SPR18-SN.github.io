@@ -111,7 +111,7 @@ textarea {
     display: inline-block;
     font-size: 30px;
     position: fixed;
-    right:5vw;
+    right:3vw;
     bottom:40vh;
     transform-style: preserve-3d;
     font-weight: bold;
@@ -129,12 +129,12 @@ textarea {
 
 
  body {
-   padding:6vw 80px 6vw 6vw ;
+   padding:6vw 60px 6vw 6vw ;
    font-family: monospace;
    color:#2d262d;
    background:#a2f1c1;
    font-family: 'Source Sans Pro', sans-serif;
-   font-size: 18px;
+   font-size: 16px;
    line-height: 1.5;
 
  }
@@ -145,7 +145,7 @@ h1 {
 font-family: 'Playfair Display', serif;
 font-weight: 900;
 font-style: italic;
-font-size: 55px;
+font-size: 34px;
 line-height: 1.2;
 
 }
@@ -291,6 +291,15 @@ ol li:before {
 }
 
 @media (min-width: 800px) {
+
+  h1 {
+  font-size: 4vw;
+
+  }
+
+  body {
+    font-size: 18px;
+  }
 
   .animation {
      font-size: 100px;

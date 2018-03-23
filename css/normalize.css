@@ -430,12 +430,13 @@ th {
 
 .main-nav .openlink{
   position:fixed;
-  top:3em;
+  top:.6em;
   padding:1em;
-  right:.6em;
+  right:0;
   width:2em;
   height:2em;
   cursor: pointer;
+  text-align: center;
 }
 
 .main-nav .navitems{
@@ -519,24 +520,25 @@ th {
 }
 
 .main-nav .navitems.open li:nth-child(1){
-  transition-delay: 0ms;
+  transition-delay: 50ms;
 }
 
 .main-nav .navitems.open li:nth-child(2) {
-  transition-delay: 150ms;
+  transition-delay: 100ms;
 }
 
 .main-nav .navitems.open li:nth-child(3) {
-  transition-delay: 300ms;
+  transition-delay: 150ms;
 }
 
 .main-nav .navitems.open li:nth-child(4){
-  transition-delay: 450ms;
+  transition-delay: 200ms;
 }
 
 @media (min-width: 800px) {
 
   .main-nav .openlink{
-    left:2em;
+    left:0;
+    top:0;
   }
 }

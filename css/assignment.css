@@ -129,12 +129,12 @@ textarea {
 
 
  body {
-   padding:6vw 80px 6vw 6vw;
+   padding:6vw 60px 6vw 6vw;
    font-family: monospace;
    color:#545454;
    background-color:#f6f6f6;
    font-family: 'Source Sans Pro', sans-serif;
-   font-size: 18px;
+   font-size: 16px;
    line-height: 1.5;
 
 
@@ -146,7 +146,7 @@ textarea {
 h1 {
 font-family: 'Playfair Display', serif;
 font-weight: 900;
-font-size: 55px;
+font-size: 34px;
 line-height: 1.2;
 
 }
@@ -479,8 +479,14 @@ a.button.active:hover {
 
 @media (min-width: 800px) {
 
+  h1 {
+  font-size: 4vw;
+
+  }
+
   body {
     background-repeat: no-repeat;
+    font-size: 18px;
   }
 
   body.assignment-1 {
