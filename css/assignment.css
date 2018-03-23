@@ -129,7 +129,7 @@ textarea {
 
 
  body {
-   padding:6vw;
+   padding:6vw 80px 6vw 6vw;
    font-family: monospace;
    color:#545454;
    background-color:#f6f6f6;
@@ -296,7 +296,7 @@ ol li:before {
   text-align: center;
   padding:1em .6em;
   transition: 300ms;
-  font-size: 80%;
+  font-size: 60%;
   animation:risein 1s ease 300ms both;
 }
 
@@ -309,6 +309,7 @@ a.button {
   border-radius: 100px;
   padding:.3em .6em;
   transition: 300ms;
+  display: inline-block;
 }
 
 a.button.inactive {

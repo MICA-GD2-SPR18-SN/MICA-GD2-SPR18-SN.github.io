@@ -430,10 +430,11 @@ th {
 
 .main-nav .openlink{
   position:fixed;
+  top:3em;
+  right:1em;
   width:2em;
   height:2em;
-  background: #2d262d;
-
+  cursor: pointer;
 }
 
 .main-nav .navitems{
@@ -464,6 +465,12 @@ th {
   margin:0;
   padding:0;
 
+
+}
+
+.main-nav .navitems li a:hover{
+  color:#a2f1c1;
+  transition: 0;
 }
 
 .main-nav .navitems li a {
@@ -473,11 +480,18 @@ th {
   font-size: 34px;
   line-height: 1.2;
   transform:translateY(-20px);
+  transition: 300ms;
 }
 
 .main-nav .navitems li::before {
   content:"";
   display:none;
+}
+
+.closelink {
+  font-style: normal!important;
+  width:2em;
+  height:2em;
 }
 
 
@@ -490,20 +504,11 @@ th {
 
 
 
-.main-nav .navitems li a {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 34px;
-line-height: 1.4;
-  transition: 300ms;
-
-}
-
 .main-nav .navitems li {
   transform:translateY(0px);
   transition: 300ms;
   opacity: 0;
+  margin: .3em;
   transform:translateY(-20px);
 }
 
@@ -513,17 +518,24 @@ line-height: 1.4;
 }
 
 .main-nav .navitems.open li:nth-child(1){
-  transition-delay: 300ms;
+  transition-delay: 0ms;
 }
 
 .main-nav .navitems.open li:nth-child(2) {
-  transition-delay: 450ms;
+  transition-delay: 150ms;
 }
 
 .main-nav .navitems.open li:nth-child(3) {
-  transition-delay: 600ms;
+  transition-delay: 300ms;
 }
 
 .main-nav .navitems.open li:nth-child(4){
-  transition-delay: 750ms;
+  transition-delay: 450ms;
+}
+
+@media (min-width: 800px) {
+
+  .main-nav .openlink{
+    left:2em;
+  }
 }
