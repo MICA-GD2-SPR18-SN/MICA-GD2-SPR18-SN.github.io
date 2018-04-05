@@ -544,7 +544,7 @@ a.button.active:hover {
           right:0;
           bottom:0;
           left:0;
-          animation: cloudanimation linear 5s -4s infinite;
+          animation: cloudanimation linear 3s -4s infinite;
         }
 
 
