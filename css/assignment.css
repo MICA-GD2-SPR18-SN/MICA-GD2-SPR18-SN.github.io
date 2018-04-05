@@ -492,10 +492,21 @@ a.button.active:hover {
             background-repeat: no-repeat;
           }
 
+          @keyframes bob {
+            from {
+              transform: translateY(5px) translateZ(50px);
+            }
+
+            to {
+              transform: translateY(0px) translateZ(50px);
+            }
+          }
+
         .a3-image-illustration .hero{
           width:200px;
           height:300px;
           transform: translateZ(50px);
+          animation: bob 1s infinite alternate;
         }
 
         .a3-image-illustration .hero img{
@@ -521,7 +532,7 @@ a.button.active:hover {
           right:0;
           bottom:0;
           left:0;
-          animation: cloudanimation linear 30s infinite;
+          animation: cloudanimation linear 10s infinite;
         }
 
         .a3-image-illustration .clouds-2 {
@@ -533,7 +544,7 @@ a.button.active:hover {
           right:0;
           bottom:0;
           left:0;
-          animation: cloudanimation linear 12s -4s infinite;
+          animation: cloudanimation linear 5s -4s infinite;
         }
 
 
