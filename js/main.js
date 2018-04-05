@@ -13,3 +13,11 @@ $( document ).ready(function() {
     $(".main-nav .navitems").toggleClass("open");
   });
 });
+
+
+
+$( document ).ready(function() {
+  $('.js-tilt').tilt({
+      scale: .8
+  })
+});

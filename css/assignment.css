@@ -477,6 +477,99 @@ a.button.active:hover {
           transform-origin: 36% 90%;
         }
 
+
+
+        .a3-image-illustration {
+            transform-style: preserve-3d;
+            position: absolute;
+            display:none;
+            width:400px;
+            height:400px;
+            left:63%;
+            top:130px;
+            background-image: url(../img/a3/backdrop.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+
+        .a3-image-illustration .hero{
+          width:200px;
+          height:300px;
+          transform: translateZ(50px);
+        }
+
+        .a3-image-illustration .hero img{
+          width:100%;
+        }
+
+        @keyframes cloudanimation {
+          from {
+            background-position: 0px 0px;
+          }
+
+          to {
+            background-position: 600px 438px;
+          }
+        }
+
+        .a3-image-illustration .clouds {
+          background-image: url(../img/a3/cloudpatt-b.png);
+          background-size: 600px;
+          position: absolute;
+          transform: translateZ(-25px);
+          top:0;
+          right:0;
+          bottom:0;
+          left:0;
+          animation: cloudanimation linear 30s infinite;
+        }
+
+        .a3-image-illustration .clouds-2 {
+          background-image: url(../img/a3/cloudpatt-f.png);
+          background-size: 600px;
+          position: absolute;
+          transform: translateZ(100px);
+          top:0;
+          right:0;
+          bottom:0;
+          left:0;
+          animation: cloudanimation linear 12s -4s infinite;
+        }
+
+
+        @keyframes capeanimation {
+          0% {
+            background-position: 0px 0px;
+          }
+
+          33% {
+            background-position: -200px 0px;
+          }
+
+          66% {
+            background-position: -400px 0px;
+          }
+
+          100% {
+            background-position: -200px 0px;
+          }
+        }
+
+        .a3-image-illustration .cape {
+          background-image: url(../img/a3/capesprite.png);
+          background-size: 600px;
+          position: absolute;
+          transform: translateZ(35px);
+          top:20px;
+          left:80px;
+          animation: capeanimation steps(1,end) .5s infinite;
+          background-repeat:no-repeat;
+          width:170px;
+          height:300px;
+        }
+
+      
+
 @media (min-width: 800px) {
 
   h1 {
@@ -500,6 +593,13 @@ a.button.active:hover {
     background-size: 240px;
     background-position: 80% 20px;
   }
+
+  body.assignment-3 {
+
+   background-size: 400px;
+   background-position: 85% 150px;
+    overflow-x: hidden;
+ }
 
   .animation {
      font-size: 100px;
@@ -531,7 +631,7 @@ a.button.active:hover {
   margin-left:10%;
 }
 
-.a2-image-illustration {
+.a2-image-illustration, .a3-image-illustration {
   display:block;
 }
 
