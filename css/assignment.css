@@ -513,7 +513,7 @@ a.button.active:hover {
         }
 
         .a3-image-illustration .clouds {
-          background-image: url(../img/a3/cloudpatt-b.png);
+          background-image: url(../img/a3/cloudpatt-bk.png);
           background-size: 600px;
           position: absolute;
           transform: translateZ(-25px);
@@ -568,7 +568,7 @@ a.button.active:hover {
           height:300px;
         }
 
-      
+
 
 @media (min-width: 800px) {
 
