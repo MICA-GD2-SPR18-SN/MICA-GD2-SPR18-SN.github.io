@@ -516,7 +516,7 @@ a.button.active:hover {
           background-image: url(../img/a3/cloudpatt-bk.png);
           background-size: 600px;
           position: absolute;
-          transform: translateZ(-25px);
+          transform: translateZ(25px);
           top:0;
           right:0;
           bottom:0;
