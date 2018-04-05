@@ -535,6 +535,14 @@ th {
   transition-delay: 200ms;
 }
 
+.main-nav .navitems.open li:nth-child(5){
+  transition-delay: 250ms;
+}
+
+.main-nav .navitems.open li:nth-child(6){
+  transition-delay: 250ms;
+}
+
 @media (min-width: 800px) {
 
   .main-nav .openlink{
