@@ -375,10 +375,9 @@ a.button.active:hover {
       }
       .a2-image-illustration {
           transform-style: preserve-3d;
-          position: absolute;
-          display:none;
-          width:400px;
-          height:400px;
+          width:300px;
+          height:250px;
+          margin: 100px auto 0 auto;
           animation: spin 30s infinite linear reverse;
           left:60%;
           top:130px;
@@ -581,6 +580,31 @@ a.button.active:hover {
 
 
 
+@media (min-width: 960px) {
+
+
+  .a2-image-illustration, .a3-image-illustration {
+    display:block;
+    position: absolute;
+    width:400px;
+    height:400px;
+  }
+
+
+  .a2-image-illustration {
+    margin:0;
+  }
+
+  body.assignment-2 {
+   background-image:url("../img/a2/bg.png");
+   background-size: 240px;
+   background-position: 80% 20px;
+ }
+
+}
+
+
+
 @media (min-width: 800px) {
 
   h1 {
@@ -599,11 +623,7 @@ a.button.active:hover {
     background-size: 40%;
   }
 
-   body.assignment-2 {
-    background-image:url("../img/a2/bg.png");
-    background-size: 240px;
-    background-position: 80% 20px;
-  }
+
 
   body.assignment-3 {
 
@@ -642,16 +662,7 @@ a.button.active:hover {
   margin-left:10%;
 }
 
-.a2-image-illustration, .a3-image-illustration {
-  display:block;
-}
 
-
-.a3-image-illustration {
-  position: absolute;
-  width:400px;
-  height:400px;
-}
 
 }
 
