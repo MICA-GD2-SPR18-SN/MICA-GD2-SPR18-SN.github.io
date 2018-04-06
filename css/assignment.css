@@ -482,10 +482,9 @@ a.button.active:hover {
         .a3-image-illustration {
             transform-style: preserve-3d;
             transform: perspective(800px);
-            position: absolute;
-            display:none;
-            width:400px;
-            height:400px;
+            margin:0 auto;
+            width:300px;
+            height:300px;
             left:63%;
             top:130px;
             background-image: url(../img/a3/backdrop.png);
@@ -645,6 +644,13 @@ a.button.active:hover {
 
 .a2-image-illustration, .a3-image-illustration {
   display:block;
+}
+
+
+.a3-image-illustration {
+  position: absolute;
+  width:400px;
+  height:400px;
 }
 
 }
