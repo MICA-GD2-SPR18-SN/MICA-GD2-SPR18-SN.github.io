@@ -127,16 +127,21 @@ body.mainpage > * {
     justify-content: center;
     margin:0;
     transition:300ms;
-    padding:3em;
+    padding:2em;
     box-sizing: border-box;
+    position: relative;
   }
 
   .classgrid li:hover {
     background:#a2f1c1;
     color: #2d262d;
-    transform: rotate(2deg) scale(1.1);
+    transform: rotate(2deg) scale(1.05);
 
 
+  }
+
+  .classgrid li:nth-child(odd):hover {
+    transform: rotate(-2deg) scale(1.05);
   }
 
   .classgrid li::before{
@@ -147,29 +152,110 @@ body.mainpage > * {
   .classgrid .namelink {
     font-size: 2em;
   }
-.classgrid .sociallink {
+.classgrid .sociallink-block {
   opacity:0;
-  transform: translateY(-100%);
+  transform: translateX(-100%);
   transition: 300ms;
+  position: absolute;
+  top:2.5em;
+  left:2.5em;
+  font-size:12px;
+  text-transform: uppercase;
 }
 
+.classgrid .sociallink-block a{
+  margin:1em;
+}
 
-
-.classgrid li:hover .sociallink {
+.classgrid li:hover .sociallink-block {
   opacity:1;
-  transform: translateY(0%);
+  transform: translateX(0%);
   color:#2d262d;
 
 }
 
+.classgrid .projectlink-block {
+  opacity:0;
+  transform: translateY(-100%);
+  transition: 300ms;
+  margin-left:-.5em;
+}
 
-.classgrid li:hover .sociallink:nth-child(1) {
+.classgrid .projectlink-block a{
+  margin:.6em;
+  display: inline-block;
+}
+
+
+.classgrid li:hover .projectlink-block {
+  transition-delay: 200ms;
+  opacity:1;
+  transform: translateY(0%);
+  color:#2d262d;
   transition-delay: 0ms;
 }
 
-.classgrid li:hover .sociallink:nth-child(2) {
-  transition-delay: 100ms;
+
+
+@keyframes spin2 {
+    from {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg)}
+    to {transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg)}
 }
+
+.card-animation .f-init,  .card-animation .l-init{
+display: inline-block;
+}
+
+.card-animation {
+ display: inline-block;
+ font-size: 30px;
+ position: absolute;
+ right:30px;
+ top:30px;
+ transform-style: preserve-3d;
+ font-weight: bold;
+ animation-name: spin2;
+ animation-duration: 12s;
+ animation-direction: reverse;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+}
+
+.classgrid li:nth-child(4n-7) .card-animation {
+  animation-delay: -8s;
+}
+
+.classgrid li:nth-child(4n-6) .card-animation {
+  animation-delay: -2s;
+}
+
+.classgrid li:nth-child(4n-5) .card-animation {
+  animation-delay: -4s;
+}
+
+.classgrid li:nth-child(4n-4) .card-animation {
+  animation-delay: -9s;
+}
+
+.classgrid li:nth-child(4n-3) .card-animation {
+  animation-delay: -3s;
+}
+
+.classgrid li:nth-child(4n-2) .card-animation {
+  animation-delay: -1s;
+}
+
+.classgrid li:nth-child(4n-1) .card-animation {
+  animation-delay: 0s;
+}
+
+.card-animation .f-init {
+  animation:spin2 6s linear -.4s infinite;
+}
+.card-animation .l-init {
+  animation:spin2 6s linear -.8s infinite;
+}
+
 
 @media (max-width: 800px) {
 
