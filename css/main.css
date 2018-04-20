@@ -171,6 +171,24 @@ body.mainpage > * {
   transition-delay: 100ms;
 }
 
+@media (max-width: 800px) {
+
+  .classgrid li{
+    display:block;
+    flex: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin:0;
+    transition:300ms;
+    padding:3em;
+    box-sizing: border-box;
+  }
+
+}
+
 
 
 
