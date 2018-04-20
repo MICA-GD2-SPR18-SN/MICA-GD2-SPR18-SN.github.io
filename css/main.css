@@ -97,6 +97,79 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body.mainpage {
+  padding:0;
+  background: #2d262d;
+  color:#fff;
+}
+
+body.mainpage > * {
+
+}
+
+  .classgrid {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0;
+
+
+  }
+
+  .classgrid li{
+    display:block;
+    flex: 33.33%;
+    height:33vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin:0;
+    transition:300ms;
+    padding:3em;
+    box-sizing: border-box;
+  }
+
+  .classgrid li:hover {
+    background:#a2f1c1;
+    color: #2d262d;
+    transform: rotate(2deg) scale(1.1);
+
+
+  }
+
+  .classgrid li::before{
+    content: "";
+
+  }
+
+  .classgrid .namelink {
+    font-size: 2em;
+  }
+.classgrid .sociallink {
+  opacity:0;
+  transform: translateY(-100%);
+  transition: 300ms;
+}
+
+
+
+.classgrid li:hover .sociallink {
+  opacity:1;
+  transform: translateY(0%);
+  color:#2d262d;
+
+}
+
+
+.classgrid li:hover .sociallink:nth-child(1) {
+  transition-delay: 0ms;
+}
+
+.classgrid li:hover .sociallink:nth-child(2) {
+  transition-delay: 100ms;
+}
 
 
 

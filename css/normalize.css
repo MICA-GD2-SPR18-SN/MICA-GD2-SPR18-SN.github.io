@@ -437,6 +437,7 @@ th {
   height:2em;
   cursor: pointer;
   text-align: center;
+  z-index: 999;
 }
 
 .main-nav .navitems{
