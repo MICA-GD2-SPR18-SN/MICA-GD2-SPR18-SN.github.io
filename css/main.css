@@ -117,6 +117,10 @@ body.mainpage > * {
 
   }
 
+  .classgrid h1 {
+    margin:0;
+  }
+
   .classgrid li{
     display:block;
     flex: 33.33%;
@@ -154,7 +158,7 @@ body.mainpage > * {
   }
 .classgrid .sociallink-block {
   opacity:0;
-  transform: translateX(-100%);
+  transform: translateX(30px);
   transition: 300ms;
   position: absolute;
   top:2.5em;
@@ -169,7 +173,7 @@ body.mainpage > * {
 
 .classgrid li:hover .sociallink-block {
   opacity:1;
-  transform: translateX(0%);
+  transform: translateX(0px);
   color:#2d262d;
 
 }

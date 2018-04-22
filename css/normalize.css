@@ -495,6 +495,7 @@ th {
   font-style: normal!important;
   width:2em;
   height:2em;
+  color:#a2f1c1;
 }
 
 
@@ -503,6 +504,11 @@ th {
   opacity:1;
   transform: scale(1) translateZ(1000px);
   transition: 300ms;
+}
+
+.main-nav h6{
+  margin:0;
+  color:#a2f1c1;
 }
 
 
@@ -541,7 +547,15 @@ th {
 }
 
 .main-nav .navitems.open li:nth-child(6){
-  transition-delay: 250ms;
+  transition-delay: 300ms;
+}
+
+.main-nav .navitems.open li:nth-child(7){
+  transition-delay: 350ms;
+}
+
+.main-nav .navitems.open li:nth-child(8){
+  transition-delay: 400ms;
 }
 
 @media (min-width: 800px) {
