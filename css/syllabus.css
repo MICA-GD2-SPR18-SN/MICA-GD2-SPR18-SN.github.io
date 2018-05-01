@@ -193,11 +193,13 @@ code {
   overflow-x: scroll;
   box-sizing: border-box;
   transition:300ms;
+  background-color: rgba(0,0,0,.03);
 }
 
-code:hover {
-  background:#2d262d;
-  color:#a2f1c1;
+
+.pointerlink:before {
+  content:"\2192";
+  margin-right: 1em;
 }
 
 p.small {
