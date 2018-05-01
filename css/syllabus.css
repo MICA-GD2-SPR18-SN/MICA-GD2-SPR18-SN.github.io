@@ -228,8 +228,9 @@ a:hover {
   height:2px;
   background:#2d262d;
   position: absolute;
-  width:120%;
+  width:110%;
   margin-top: .7em;
+  margin-left: -5%;
   transform: rotate(-8deg);
 }
 
