@@ -478,9 +478,8 @@ th {
 
 .main-nav .navitems li a {
   font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 34px;
+  font-weight: 500;
+  font-size: 26px;
   line-height: 1.2;
   transform:translateY(-20px);
   transition: 300ms;
@@ -556,6 +555,10 @@ th {
 
 .main-nav .navitems.open li:nth-child(8){
   transition-delay: 400ms;
+}
+
+.main-nav .navitems.open li:nth-child(9){
+  transition-delay: 450ms;
 }
 
 @media (min-width: 800px) {

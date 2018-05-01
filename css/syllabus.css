@@ -182,6 +182,24 @@ h4,h5,h6 {
 
 }
 
+code {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 80%;
+  border:1px solid rgba(0,0,0,.2);
+  border-radius: 3px;
+  display:block;
+  padding:2em;
+  width:100%;
+  overflow-x: scroll;
+  box-sizing: border-box;
+  transition:300ms;
+}
+
+code:hover {
+  background:#2d262d;
+  color:#a2f1c1;
+}
+
 p.small {
   font-size: 12px;
 }
@@ -193,6 +211,12 @@ a {
   padding-bottom: .3em;
   padding-top: .3em;
   border-bottom: 1px solid transparent;
+}
+
+.aside-left a {
+  font-size: inherit;
+  margin-bottom: .2em;
+  display: block;
 }
 
 a:hover {

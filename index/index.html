@@ -1,0 +1,226 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/syllabus.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,900,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hanalei+Fill|Shrikhand" rel="stylesheet">
+    </head>
+    <body>
+      <div class="main-nav">
+
+        <div class="openlink">&#9776;</div>
+
+        <ul class="navitems">
+          <li><a href="../index.htm">GD 220.05</a></li>
+          <li><h6>Assignment Sheets</h6></li>
+          <li><a href="../assignment-1/index.html">Lyrical Mapping</a></li>
+          <li><a href="../assignment-2/index.html">A Day in the Life</a></li>
+          <li><a href="../assignment-3/index.html">We Could Be Heroes</a></li>
+          <li><h6>Class Materials</h6></li>
+          <li><a href="../syllabus/index.html">Syllabus</a></li>
+          <li><a href="../index/index.html">Index</a></li>
+          <li><a href="https://mica.instructure.com/courses/2441">Instructure</a></li>
+          <li><a class="closelink" href="#">×</a></li>
+        </ul>
+
+      </div>
+
+
+
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="animation">
+          <span class="g">G</span>
+          <span class="d">D</span>
+          <span class="two">2</span>
+
+        </div>
+    <div class="main-content-well">
+        <p class="monospace">GD | 220.05 | Intro to Interaction Design</p>
+
+        <h1 id="graphic-design-2"><span class="strikethrough">Index</span> <span class="strikethrough">Omnibus</span> <span class="strikethrough">Précis</span>&nbsp;Misc.</h1>
+        <div class="aside-left monospace">
+        <p class="monospace">
+          <strong>Spring 2018</strong>
+          <br/><br/><a href="#">Useful Resources</a>
+          <a href="#">Transitions in CSS</a>
+          <a href="#">Creating Animations in CSS</a>
+          <a href="#">Media queries &amp; mobile styles:</a>
+          <a href="#">SVGs: exporting &amp; animating</a>
+          <a href="#">On building layouts:</a>
+          <a href="#">jQuery for Basic Interactions</a>
+          <a href="#">Parting Thoughts</a>
+        </p>
+      </div>
+
+      <p class="introcopy">
+        Thanks so much for a great semester. This class was engaged and thoughtful and I really appreciated the way you all dived in to the material ad made it your own. Thanks for bearing with me! Please fill out your surveys with as much feedback as possible to make the next class even better.
+      </p>
+
+        <h2 id="useful-resources">Useful Resources:</h2>
+<p>A good <strong>reference library</strong> of style attributes:<br>
+<a class="pointerlink" href="https://cssreference.io/typography/">cssreference.io</a></p>
+<p>A comprehensive, multipart  <strong>CSS tutorial</strong>.<br>
+<a href="https://www.w3schools.com/css/">https://www.w3schools.com/css/</a></p>
+<p>A useful <strong>front-end template</strong> for starting a project<br>
+<a class="pointerlink" href="https://www.w3schools.com/css/">https://html5boilerplate.com</a></p>
+<h2 id="transitions">Transitions in CSS</h2>
+<p><a class="pointerlink"  href="https://css-tricks.com/almanac/properties/t/transition/">https://css-tricks.com/almanac/properties/t/transition/</a></p>
+<h2 id="creating-animations">Creating Animations in CSS</h2>
+<p>First, somewhere towards the beginning of your CSS document <strong>define the keyframes</strong>of your animation:</p>
+<pre><code>@keyframes fade-in {
+
+ from {
+ opacity:0;
+ }
+
+ to {
+ opacity: 1;
+ }
+
+}
+</code></pre>
+<p>Then, <strong>call your animation</strong> in the style declaration of the element you want to animate</p>
+<pre><code>.my-cool-div {
+ animation-name: fade-in;
+ animation-duration: 7s;
+ animation-fill-mode: both; /* optional */ animation-iteration-count: infinite; /* optional */ animation-delay: 1s; /* optional */
+ animation-direction: alternate; /* optional */
+}
+</code></pre>
+<p>For  <strong>more information</strong> on animations:</p>
+<p><a class="pointerlink" href="https://cssreference.io/animations/">https://cssreference.io/animations/</a></p>
+<p><a class="pointerlink"  href="https://css-tricks.com/almanac/properties/a/animation/">https://css-tricks.com/almanac/properties/a/animation/</a></p>
+
+<h2 id="media-queries--mobile-styles">Media queries &amp; mobile styles:</h2>
+<p>You can create styles for specific viewport sizes using the  @media css rule. Place these at the very end of your document after all your styles. Below is an example showing how you might scale a big headline down for smaller viewports:</p>
+<pre><code>h1 {
+   font-size:48px;
+ }
+
+@media (max-width: 800px) {
+ h1 {
+   font-size:36px;
+ }
+}
+@media (max-width: 400px) {
+ h1 {
+   font-size:24px;
+ }
+}
+</code></pre>
+<p>Media queries are can be formatted in the following ways:</p>
+<pre><code>@media (max-width: 400px) {
+ */This media query contains styles that apply from the smallest possible viewport width up to 400px */
+}
+
+@media (min-width: 400px) {
+ */This media query contains styles that apply from the largest possible viewport width down to 400px */
+}
+
+@media (min-width: 400px) and (max-width: 1024px) {
+ */This media query contains styles that apply only between the widths of 400px and 1024 px */
+}
+</code></pre>
+
+<h2 id="svg">SVGs: exporting &amp; animating</h2>
+<p>You can create styles for specific viewport sizes using the  @media css rule. Place these at the very end of your document after all your styles. Below is an example showing how you might scale a big headline down for smaller viewports:</p>
+<pre><code>h1 {
+   font-size:48px;
+ }
+
+@media (max-width: 800px) {
+ h1 {
+   font-size:36px;
+ }
+}
+@media (max-width: 400px) {
+ h1 {
+   font-size:24px;
+ }
+}
+</code></pre>
+<p>Media queries are can be formatted in the following ways:</p>
+
+<h2 id="on-building-layouts">On building layouts:</h2>
+<p>I mentioned in class that there are a few ways to create layouts in HTML. I’ve outlined 3 ways below. <em>Note: You’ll also notice I’ve set up a media query within the Codepen examples for display on smaller viewports.</em></p>
+<p><strong>Method 1: Float</strong> <em>(most widely supported)</em></p>
+<p>One way you can build your layouts is through the “float” property. Here’s the example I shared during class:</p>
+<p><a class="pointerlink" href="https://codepen.io/SpenceJMNelson/pen/aqvXxK">https://codepen.io/SpenceJMNelson/pen/aqvXxK </a></p>
+<p>I have created my layout elements and set them all to “float:left;” Note: Items making up adjacent columns need to add up to 100%. Note what happens when content in one column gets taller than adjacent columns, and compare that with the flexbox codepen.</p>
+<p>for greater insight into how this functions try removing the float attributes in the css frame, or try adjusting the size of the columns. can you make them all equal size while still having them appear next to each other?</p>
+<p><strong>Method 2: Flexbox  <em>(I’d personally recommend this one)</em></strong></p>
+<p>This method is a little more reliable than floating. Here’s a codepen in action:</p>
+<p><a class="pointerlink" href="https://codepen.io/SpenceJMNelson/pen/NywJKV">https://codepen.io/SpenceJMNelson/pen/NywJKV </a></p>
+<p>Whenever you want columns, just wrap the elements you want to appear next to each other inside a div and set that div to  display:flex. You can set the widths to whatever you want and the layout won’t break in the same way it does using floats. Additionally, You’ll note that when the content of one item in a flex layout row gets taller than the others, the height of all the other items grows to match it.</p>
+<p>Here’s a nice guide on using flexbox, with some more advanced uses</p>
+<p><a class="pointerlink" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/ </a></p>
+<p><strong>Method 3: CSS Grid</strong> <em>(Most advanced, not as widely supported )</em></p>
+<p>This method is designed from the ground up within the last year for creating grids on the web and offers the greatest number of options and flexibility, and allows you to consider grids in both horizontal and vertical axis. Here’s a codepen in action:</p>
+<p><a href="https://codepen.io/SpenceJMNelson/pen/eVeXwy">https://codepen.io/SpenceJMNelson/pen/eVeXwy </a></p>
+<p>Notice how I’m able to define 6 column grid for everything within the “main-wrapper” div with “grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;”, then style the child elements to span columns and rows within that grid. It takes a while to get the hang of it (I’m still figuring it out TBQH), but it is quite powerful.</p>
+<p>A full guide:</p>
+<p><a class="pointerlink" href="https://css-tricks.com/snippets/css/complete-guide-grid/">https://css-tricks.com/snippets/css/complete-guide-grid/ (Links to an external site.)<br>
+</a></p>
+<h2 id="jquery-for-basic-interactions">jQuery for Basic Interactions</h2>
+<p>If you want to install jQuery on a page you created from scratch, place this code before the  tag toward the end of your document:</p>
+<pre><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+ //your javascript here.
+
+&lt;/script&gt;
+</code></pre>
+<p>You can write your javascript based on this codepen:</p>
+<p><a class="pointerlink" href="https://codepen.io/SpenceJMNelson/pen/vRYpox">https://codepen.io/SpenceJMNelson/pen/vRYpox </a></p>
+<p>It uses jQuery to toggle a class on an element that hides and shows a menu. The code does the following:</p>
+<pre><code>$( document ).ready(function() { //this line initializes jQuery on your page
+ $(".class_of_clickable_thing").click(function(){
+   $(".class_of_thing_you_want_to_add_class_to").toggleClass("name_of_class_you_want_to_add");
+ });
+});
+</code></pre>
+<p>So if I wanted to add a class of “active” to an item that already has a class of “menu” when a user clicks an element with a class of “button”, it would look like this (note that when you  declare the class you want to add, you don’t include a period before the class name.)</p>
+<pre><code>$( document ).ready(function() {
+   $(".button").click(function(){
+     $(".menu").toggleClass("active");
+   });
+});
+</code></pre>
+
+<h2 id="components">Parting Thoughts</h2>
+<h3>Designing Components</h3>
+<p>I tend to start with designing specific  <strong>components</strong>  as the basis of a design because it allows me to play with details of the system without boxing myself in to specific viewport widths.  <a href="https://codepen.io/SpenceJMNelson/pen/mqyxga">Here’s an example of a component i designed in my own work. </a> Take a look at the code as well, as it might provide some insights into more advanced uses of hovers &amp; transitions.</p>
+<p>Here, I used a small card component to play with how type and color worked together on a larger page I was working on. This component could pe put anywhere into a larger design system, and doesn’t rely on browser width.</p>
+
+        </div>
+
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
