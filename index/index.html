@@ -79,28 +79,52 @@
 <a class="pointerlink" href="https://www.w3schools.com/css/">https://www.w3schools.com/css/</a></p>
 <p>A useful <strong>front-end template</strong> for starting a project<br>
 <a class="pointerlink" href="https://www.w3schools.com/css/">https://html5boilerplate.com</a></p>
-<h2 id="transitions">Transitions in CSS</h2>
-<p><a class="pointerlink"  href="https://css-tricks.com/almanac/properties/t/transition/">https://css-tricks.com/almanac/properties/t/transition/</a></p>
+
+<h2 id="transitions">Transitions between states</h2>
+
+<p>First, somewhere towards the beginning of your CSS document <strong>define the keyframes</strong>of your animation:</p>
+<pre><code>
+a {
+  color:blue;
+}
+
+a:hover {
+  color:red;
+}
+
+</code></pre>
+<p>Then, <strong>call your animation</strong> in the style declaration of the element you want to animate</p>
+
+<pre><code>
+a {
+  color:blue;
+}
+
+</code></pre>
+
+
 <h2 id="creating-animations">Creating Animations in CSS</h2>
 <p>First, somewhere towards the beginning of your CSS document <strong>define the keyframes</strong>of your animation:</p>
-<pre><code>@keyframes fade-in {
+<pre><code>
+@keyframes fade-in {
 
- from {
- opacity:0;
- }
+  from {
+    opacity:0;
+  }
 
- to {
- opacity: 1;
- }
+  to {
+    opacity: 1;
+  }
 
 }
 </code></pre>
 <p>Then, <strong>call your animation</strong> in the style declaration of the element you want to animate</p>
-<pre><code>.my-cool-div {
- animation-name: fade-in;
- animation-duration: 7s;
- animation-fill-mode: both; /* optional */ animation-iteration-count: infinite; /* optional */ animation-delay: 1s; /* optional */
- animation-direction: alternate; /* optional */
+<pre><code>
+.my-cool-div {
+  animation-name: fade-in;
+  animation-duration: 7s;
+  animation-fill-mode: both; /* optional */ animation-iteration-count: infinite; /* optional */ animation-delay: 1s; /* optional */
+  animation-direction: alternate; /* optional */
 }
 </code></pre>
 <p>For  <strong>more information</strong> on animations:</p>
@@ -109,19 +133,21 @@
 
 <h2 id="media-queries--mobile-styles">Media queries &amp; mobile styles:</h2>
 <p>You can create styles for specific viewport sizes using the  @media css rule. Place these at the very end of your document after all your styles. Below is an example showing how you might scale a big headline down for smaller viewports:</p>
-<pre><code>h1 {
-   font-size:48px;
- }
+<pre><code>
+h1 {
+  font-size:48px;
+}
 
 @media (max-width: 800px) {
- h1 {
-   font-size:36px;
- }
+  h1 {
+    font-size:36px;
+  }
 }
+
 @media (max-width: 400px) {
- h1 {
-   font-size:24px;
- }
+  h1 {
+    font-size:24px;
+  }
 }
 </code></pre>
 <p>Media queries are can be formatted in the following ways:</p>
@@ -140,20 +166,7 @@
 
 <h2 id="svg">SVGs: exporting &amp; animating</h2>
 <p>You can create styles for specific viewport sizes using the  @media css rule. Place these at the very end of your document after all your styles. Below is an example showing how you might scale a big headline down for smaller viewports:</p>
-<pre><code>h1 {
-   font-size:48px;
- }
-
-@media (max-width: 800px) {
- h1 {
-   font-size:36px;
- }
-}
-@media (max-width: 400px) {
- h1 {
-   font-size:24px;
- }
-}
+<pre><code>svg code stuff
 </code></pre>
 <p>Media queries are can be formatted in the following ways:</p>
 
