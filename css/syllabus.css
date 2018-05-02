@@ -102,6 +102,8 @@ textarea {
        to {transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg)}
    }
 
+
+
  .animation .g,  .animation .d,  .animation .two {
    display: inline-block;
  }
@@ -318,7 +320,8 @@ ol li:before {
 @media (min-width: 800px) {
 
   h1 {
-  font-size: 4vw;
+  font-size: 6vw;
+  line-height: 1;
 
   }
 
