@@ -165,9 +165,34 @@ h1 {
 </code></pre>
 
 <h2 id="svg">SVGs: exporting &amp; animating</h2>
-<p>You can create styles for specific viewport sizes using the  @media css rule. Place these at the very end of your document after all your styles. Below is an example showing how you might scale a big headline down for smaller viewports:</p>
-<pre><code>svg code stuff
+<p>You can export an svg from illustrator and sketch.</p>
+<pre><code>
+*/CSS*/
+  @keyframes bigbounce{
+  from {
+    transform:translateX(-50%) translateY(-50%) rotate(0);
+  }
+  
+  to {
+    transform:translateX(-50%) translateY(-80%) rotate(30deg);
+  }
+}
+
+
 </code></pre>
+
+
+<svg width="138px" height="162px" viewBox="0 0 138 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="51.5" cy="49.5" r="48.5"></circle>
+        <rect id="Rectangle" stroke="#000000" stroke-width="2" x="52" y="50" width="85" height="85"></rect>
+        <polygon id="Triangle" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="51.5 76 102 161 1 161"></polygon>
+    </g>
+</svg>
+
 <p>Media queries are can be formatted in the following ways:</p>
 
 <h2 id="on-building-layouts">On building layouts:</h2>
