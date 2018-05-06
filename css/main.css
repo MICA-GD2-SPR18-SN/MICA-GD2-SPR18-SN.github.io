@@ -125,33 +125,49 @@ body.mainpage > * {
     display:block;
     flex: 33.33%;
     height:33vw;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
     margin:0;
     transition:300ms;
-    padding:2em;
-    box-sizing: border-box;
+    
     position: relative;
     background-color:#2d262d;
+    background-size:cover;
+    background-position: center;
   }
 
    
 
   .classgrid li:hover {
-    background:#a2f1c1;
+    background-color:#a2f1c1;
     color: #2d262d;
-    transform: rotate(5deg) scale(1.05) translateZ(200px);
-    background-image:none!important;
+
+
   }
-  
-  .classgrid li:nth-child(odd):hover {
-    transform: rotate(-2deg) scale(1.05);
-  }
+
 
   .classgrid li::before{
     content: "";
+  }
+
+  .classgrid .card-content-wrapper {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding:2em;
+    box-sizing: border-box;
+    background-color:rgba(0,0,0,.5);
+    transition: 300ms;
+  }
+
+  .classgrid li:hover .card-content-wrapper{
+    background-color:rgba(162, 241, 193, 0.9)
   }
 
   .classgrid .namelink {
@@ -167,6 +183,7 @@ body.mainpage > * {
   font-size:12px;
   text-transform: uppercase;
 }
+
 
 .classgrid .sociallink-block a{
   margin:1em;
@@ -202,10 +219,10 @@ body.mainpage > * {
 
 
 
-@keyframes spin2 {
+/* @keyframes spin2 {
     from {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg)}
     to {transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg)}
-}
+} */
 
 .card-animation .f-init,  .card-animation .l-init{
 display: inline-block;
@@ -276,7 +293,44 @@ display: inline-block;
     transition:300ms;
     padding:3em;
     box-sizing: border-box;
+    min-height: 300px;
   }
+
+  .classgrid li .sociallink-block {
+  opacity:1;
+  transform: translateX(0px);
+  color:#2d262d;
+
+}
+
+
+.classgrid li .projectlink-block {
+  transition-delay: 200ms;
+  opacity:1;
+  transform: translateY(0%);
+  color:#2d262d;
+  transition-delay: 0ms;
+}
+
+.classgrid li .card-content-wrapper{
+    background-color:rgba(162, 241, 193, 0.7)
+  }
+
+  .classgrid li .projectlink-block {
+  transition-delay: 200ms;
+  opacity:1;
+  transform: translateY(0%);
+  color:#2d262d;
+  transition-delay: 0ms;
+}
+
+.classgrid li {
+    background-color:#a2f1c1;
+    color: #2d262d;
+
+
+  }
+
 
 }
 
