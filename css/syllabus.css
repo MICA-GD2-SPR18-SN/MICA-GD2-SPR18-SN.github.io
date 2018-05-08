@@ -231,7 +231,7 @@ code {
     transform:rotateX(0deg) rotateY(0deg);
   }
   to {
-    transform:rotateX(90deg) rotateY(270deg);
+    transform:rotateX(70deg) rotateY(200deg);
   }
 }
 
