@@ -198,6 +198,48 @@ code {
   background-color: rgba(0,0,0,.03);
 }
 
+ @keyframes svgtrianglemove{
+  from {
+    transform:translateX(10px)
+  }
+  to {
+    transform:translateX(0px)
+  }
+}
+
+  svg.mydrawing #Triangle{
+    animation:svgtrianglemove 1s infinite alternate;
+    transform-origin: 40% 80%;
+  }
+
+  @keyframes svgsquaremove{
+  from {
+    transform:scale(.8)
+  }
+  to {
+    transform:scale(1)
+  }
+}
+
+  svg.mydrawing #Rectangle{
+    animation:svgsquaremove 1s infinite alternate;
+    transform-origin: 10% 80%;
+  }
+
+   @keyframes svgcirclemove{
+  from {
+    transform:rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform:rotateX(90deg) rotateY(270deg);
+  }
+}
+
+  svg.mydrawing #Oval{
+    animation:svgcirclemove 1s infinite alternate;
+    transform-origin: 40% 30%;
+  }
+
 
 .pointerlink:before {
   content:"\2192";
