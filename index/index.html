@@ -51,7 +51,7 @@
 
         </div>
     <div class="main-content-well">
-        <p class="monospace">GD | 220.05 | Intro to Interaction Design</p>
+        <p class="monospace">GD | 220.05 | Outro to Interaction Design</p>
 
         <h1 id="graphic-design-2"><span class="strikethrough">Index</span> <span class="strikethrough">Omnibus</span> <span class="strikethrough">Précis</span>&nbsp;Useful Stuff.</h1>
         <div class="aside-left monospace">
@@ -102,12 +102,49 @@
 </a></p>
 
 
-<h2 id="transitions">Transitions between states</h2>
+<h2 id="transitions">States &amp; Transitions</h2>
 
-<p>First, somewhere towards the beginning of your CSS document <strong>define the keyframes</strong>of your animation:</p>
+<p>Adding a ":hover" pseudoelement in css lets you change css attributes based on whether a user's mouse is over the element. This code will change a link;s color from blue to red when the user hovers on that link:</p>
 <pre><code>
 a {
   color:blue;
+}
+<b>
+a:hover {
+  color:red;
+}
+</b>
+
+</code></pre>
+
+<p>You can also add a hover to a parent element for more complex interactions. Here, when you hover over a link block, two elements nested inside it(an "h2" and a "p" tag) will behave differently:</p>
+
+<pre><code>
+a.linkblock h2 {
+  color:blue;
+}
+
+a.linkblock p {
+  opacity:0;
+}
+<b>
+a.linkblock:hover h2 {
+  color:red;
+}
+
+a.linkblock:hover p {
+  opacity:1;
+}
+</b>
+
+</code></pre>
+
+<p>You can then add a transition to automatically animate the transformation between these two states</p>
+
+<pre><code>
+a {
+  color:blue;
+  <b>transition:300ms;</b>
 }
 
 a:hover {
@@ -115,14 +152,7 @@ a:hover {
 }
 
 </code></pre>
-<p>Then, <strong>call your animation</strong> in the style declaration of the element you want to animate</p>
 
-<pre><code>
-a {
-  color:blue;
-}
-
-</code></pre>
 
 
 <h2 id="creating-animations">Creating Animations in CSS</h2>
