@@ -58,6 +58,7 @@
         <p class="monospace">
           <strong>Spring 2018</strong>
           <br/><br/><a href="#useful-resources">Useful Resources</a>
+          <a href="#articles">Articles &amp; Essays</a>
           <a href="#on-building-layouts">On building layouts:</a>
           <a href="#transitions">Transitions in CSS</a>
           <a href="#creating-animations">Creating Animations in CSS</a>
@@ -79,6 +80,42 @@
 <a class="pointerlink" href="https://www.w3schools.com/css/">https://www.w3schools.com/css/</a></p>
 <p>A useful <strong>front-end template</strong> for starting a project<br>
 <a class="pointerlink" href="https://www.w3schools.com/css/">https://html5boilerplate.com</a></p>
+
+<h2 id="articles">Articles &amp; Essays</h2>
+
+  <p><a href="https://www.frankchimero.com/writing/what-screens-want/">What Screens Want<span class="source">Frank Chimero</span></a></p>
+
+  <p><a href="https://medium.com/@earth.terminal/now-you-see-it-110b77fd13db">Now You See It: Helvetica, Modernism and the Status Quo of Design<span class="source">Dangerous Objects</span></a></p>
+
+  <p><a href="https://www.frankchimero.com/writing/the-webs-grain/">The Web's Grain<span class="source">Frank Chimero</span></a></p>
+
+  <p><a href="https://www.readingdesign.org/beyond-the-new">Beyond the New: a Search for Ideals in Design<span class="source">Hella Jongerius &amp; Louise Schouwenberg</span></a></p>
+
+  <p><a href="http://joaap.org/press/pwb/PWB_TrainingForExploitation_smaller.pdf">Training for Exploitation? Politicising Employability & Reclaiming Education<span class="source">Precarious Workforce Brigade</span></a></p>
+
+  <p><a href="https://alistapart.com/article/reframing-accessibility-for-the-web">Reframing Accessibility for the Web<span class="source">Anne Gibson</span></a></p>
+
+  <p><a href="https://www.aiga.org/why-is-graphic-design-93-percent-white-diversity">Why is graphic design 93% white?<span class="source">Brenda Mitchell-Powell</span></a></p>
+
+  <p><a href="http://alistapart.com/article/diy-web-accessibility-blueprint">A DIY Web Accessibility Blueprint<span class="source">Beth Raduenzel</span></a></p>
+
+  <p><a href="https://techcrunch.com/2017/08/16/hatespeech-white-supremacy-nazis-social-networks/">Tech is not winning the battle against white supremacy<span class="source">Taylor Hatmaker</span></a>
+    <br/><em style="font-size:80%">(CW: racial slurs, homophobic language and very graphic depictions of racism and violence)</em></p>
+
+  <p><a href="http://alistapart.com/article/responsive-comping-obtaining-signoff-with-mockups">Responsive Comping: Obtaining Signoff without Mockups<span class="source">Matt Griffin</span></a></p>
+
+  <p><a href="https://medium.com/@jamesbridle/something-is-wrong-on-the-internet-c39c471271d2">Fairytales &amp; Fashion Criticism<span class="source">Rachel Matthews</span></a></p>
+
+  <p><a href="https://thebaffler.com/salvos/oculus-grift-shivani">Oculus Grift<span class="source">Anis Shivani</span></a></li></p>
+
+  <p><a href="https://www.readingdesign.org/robinson-crusoe">Robinson Crusoe<span class="source">Tanya Harrod</span></a></li></p>
+
+  <p><a href="https://www.jacobinmag.com/2012/08/designing-culture">Designing Culture<span class="source">Colin McSwiggin</span></a></li></p>
+
+  <p><a href="https://mica.instructure.com/files/73642/download?download_frd=1">Looks Much Better Now: On The White Utopian Gaze<span class="source">Mark Gunnery for Hyrsteria Zine</span></a></li></p>
+
+  <p><a href="https://ourdataourselves.tacticaltech.org/posts/30-on-weaponised-design/">On Weaponised Design<span class="source">Cade for Our Data Our Selves</span></a></li></p>
+
 
 <h2 id="on-building-layouts">On building layouts:</h2>
 <p>I mentioned in class that there are a few ways to create layouts in HTML. I’ve outlined 3 ways below. <em>Note: You’ll also notice I’ve set up a media query within the Codepen examples for display on smaller viewports.</em></p>
@@ -217,7 +254,7 @@ h1 {
 </code></pre>
 
 <h2 id="svg">SVGs: exporting &amp; animating</h2>
-<p>You can export an image as an SVG from illustrator and sketch in the same way you would as a PNG or JPG. Exported SVG code will be in this format, which you can see is somewhat similar to HTML:</p> 
+<p>You can export an image as an SVG from illustrator and sketch in the same way you would as a PNG or JPG. Exported SVG code will be in this format, which you can see is somewhat similar to HTML:</p>
 
 <pre><code>
   &#x3C;svg class=&#x22;mydrawing&#x22; width=&#x22;138px&#x22; height=&#x22;162px&#x22; viewBox=&#x22;0 0 138 162&#x22; version=&#x22;1.1&#x22; xmlns=&#x22;http://www.w3.org/2000/svg&#x22; xmlns:xlink=&#x22;http://www.w3.org/1999/xlink&#x22;&#x3E;
@@ -233,7 +270,7 @@ h1 {
 
 </code></pre>
 
-<p>Embedded in the markup, this SVG code will behave the same way as an .svg file linked to in an &#x3C;img&#x3E; tag. Here's the preceding code rendered in the browser:</p> 
+<p>Embedded in the markup, this SVG code will behave the same way as an .svg file linked to in an &#x3C;img&#x3E; tag. Here's the preceding code rendered in the browser:</p>
 
   <svg width="138px" height="162px" viewBox="0 0 138 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
@@ -246,7 +283,7 @@ h1 {
       </g>
   </svg>
 
-<p>The key difference is that if you embed an svg inline, you can animate it just as you would standard HTML markup. I've added some animations here by finding IDs inside the svg code I want to select:</p> 
+<p>The key difference is that if you embed an svg inline, you can animate it just as you would standard HTML markup. I've added some animations here by finding IDs inside the svg code I want to select:</p>
 
 <pre><code>
 
@@ -286,14 +323,14 @@ svg.mydrawing #Rectangle{
   to {
     transform:rotateX(90deg) rotateY(270deg);
   }
-} 
+}
 
 svg.mydrawing #Oval{
   animation:svgcirclemove 1s infinite alternate;
   transform-origin: 40% 30%;
 }
 
-  
+
 
 </code></pre>
 
@@ -308,7 +345,7 @@ svg.mydrawing #Oval{
       </g>
   </svg>
 
-<p>One thing to note: you'll have to set a "transform origin" when rotating or scaling a given element. The default transformation point for all elements in the drawing is at the center of the SVG itself, not the individual elements themselves. </p> 
+<p>One thing to note: you'll have to set a "transform origin" when rotating or scaling a given element. The default transformation point for all elements in the drawing is at the center of the SVG itself, not the individual elements themselves. </p>
 
 <h2 id="jquery-for-basic-interactions">jQuery for Basic Interactions</h2>
 <p>If you want to install jQuery on a page you created from scratch, place this code before the  tag toward the end of your document:</p>
